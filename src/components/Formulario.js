@@ -88,7 +88,7 @@ export const Formulario = () => {
                                 <Col xs={12} sm={8} className="px-1">
                                     <input
                                         type="email"
-                                        placeholder="Correo electronico"
+                                        placeholder="Correo electrónico"
                                         value={correo}
                                         onChange={(e) => setCorreo(e.target.value)}
                                     />
@@ -104,7 +104,7 @@ export const Formulario = () => {
                                 <Col xs={12} className="px-1">
                                     <input
                                         type="text"
-                                        placeholder="Por qué quieres participar!"
+                                        placeholder="¡Por qué quieres participar!"
                                         value={mensaje}
                                         onChange={(e) => setMensaje(e.target.value)}
                                     />

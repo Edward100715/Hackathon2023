@@ -38,23 +38,23 @@ export const Rewards = () => {
                             <Carousel responsive={responsive} infinite={true} autoPlay infiniteLoop className="owl-carousel owl-theme rewards-slider">
                                 <div className="item">
                                     <img src={p1} alt="p1" />
-                                    <h5>¡ El primer lugar ganara 4 viajes a cualquier cuidad de colombia !</h5>
+                                    <h5>¡ El primer lugar ganará4 viajes a cualquier ciudad de colombia !</h5>
                                 </div>
                                 <div className="item">
                                     <img src={p2} alt="p2" />
-                                    <h5>¡ El segundo lugar ganara un total de 1.8 millones de pesos !</h5>
+                                    <h5>¡ El segundo lugar ganará un total de 1.8 millones de pesos !</h5>
                                 </div>
                                 <div className="item">
                                     <img src={p3} alt="p3" />
-                                    <h5>¡ El tercer lugar ganara un TV XIAOMI 32" Pulgadas HD LED !</h5>
+                                    <h5>¡ El tercer lugar ganará un TV XIAOMI 32" Pulgadas HD LED !</h5>
                                 </div>
                                 <div className="item">
                                     <img src={p4} alt="p4" />
-                                    <h5>¡ El cuarto y quinto lugar ganaran para cada uno un Combo KALLEY Alámbrico Teclado + Mouse + Audífonos + PadMouse Gaming Negro !</h5>
+                                    <h5>¡ El cuarto y quinto lugar ganarán para cada uno un Combo KALLEY Alámbrico Teclado + Mouse + Audífonos + PadMouse Gaming Negro !</h5>
                                 </div>
                                 <div className="item">
                                     <img src={p5} alt="p5" />
-                                    <h5>¡ los demas concursantes por participar ganaran unos audifonos y un reloj g-shock - Sears!</h5>
+                                    <h5>¡ los demas concursantes por participar ganarán unos audifonos y un reloj g-shock - Sears!</h5>
                                 </div>
                             </Carousel>
                         </div>
