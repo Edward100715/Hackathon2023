@@ -38,7 +38,7 @@ export const Rewards = () => {
                             <Carousel responsive={responsive} infinite={true} autoPlay infiniteLoop className="owl-carousel owl-theme rewards-slider">
                                 <div className="item">
                                     <img src={p1} alt="p1" />
-                                    <h5>¡ El primer lugar ganará4 viajes a cualquier ciudad de colombia !</h5>
+                                    <h5>¡ El primer lugar ganará 4 viajes a cualquier ciudad de colombia !</h5>
                                 </div>
                                 <div className="item">
                                     <img src={p2} alt="p2" />
