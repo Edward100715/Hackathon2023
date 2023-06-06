@@ -6,9 +6,11 @@ import logo from "../assets/img/footer.png"
 
 export const Footer = () => {
 
+    // Estado para controlar la visibilidad del botón de desplazamiento hacia arriba
     const [showScrollToTop, setShowScrollToTop] = useState(false);
 
     useEffect(() => {
+        // Función para manejar el desplazamiento
         const handleScroll = () => {
             if (window.scrollY > 500) {
                 setShowScrollToTop(true);
@@ -17,8 +19,10 @@ export const Footer = () => {
             }
         };
 
+        // Agregar el evento de desplazamiento al montar el componente
         window.addEventListener("scroll", handleScroll);
 
+        // Eliminar el evento de desplazamiento al desmontar el componente
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };

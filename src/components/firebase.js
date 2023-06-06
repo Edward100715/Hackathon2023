@@ -1,6 +1,7 @@
 import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
 
+// Configuración de Firebase
 const firebaseConfig = {
   apiKey: "AIzaSyCEK7DNDwOjq491GBV3uK-hiHzv3lkHh34",
   authDomain: "hackathon-f7f79.firebaseapp.com",
@@ -11,7 +12,7 @@ const firebaseConfig = {
   measurementId: "G-PG3S1H39N5"
 };
 
-// Inicializa Firebase
+// Inicializa Firebase con la configuración proporcionada
 const app = initializeApp(firebaseConfig);
 
 // Obtiene la instancia de Firestore

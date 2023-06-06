@@ -7,6 +7,7 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
 export const Rewards = () => {
+    // Configuración responsive del carousel
     const responsive = {
         superLargeDesktop: {
 

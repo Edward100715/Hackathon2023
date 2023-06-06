@@ -1,4 +1,5 @@
 /************ Custom Font ************/
+/* Definición de fuentes personalizadas */
 @font-face {
   font-family: Centra;
   src: url("./assets/font/CentraNo2-Bold.ttf");
@@ -18,17 +19,20 @@
 }
 
 /************ Default Css ************/
+/* Estilos predeterminados para todos los elementos */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Estilos para el elemento html */
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
 }
 
+/* Estilos para el elemento body */
 body {
   font-weight: 400;
   overflow-x: hidden;
@@ -38,6 +42,7 @@ body {
   font-family: "Centra", sans-serif !important;
 }
 
+/* Estilos para los encabezados h1, h2, h3, h4, h5, h6 */
 h1,
 h2,
 h3,
@@ -49,6 +54,7 @@ h6 {
   line-height: normal;
 }
 
+/* Estilos para los párrafos, enlaces, elementos de lista, botones y listas no ordenadas */
 p,
 a,
 li,
@@ -60,26 +66,31 @@ ul {
   text-decoration: none;
 }
 
+/* Estilos para los enlaces cuando se les pasa el mouse por encima */
 a:hover {
   text-decoration: none;
 }
 
+/* Estilos para las imágenes */
 img {
   width: 100%;
   height: auto;
 }
 
+/* Estilos para los botones */
 button {
   border: 0;
   background-color: transparent;
 }
 
+/* Estilos para los campos de entrada (input), áreas de texto (textarea) y selectores */
 input:focus,
 textarea:focus,
 select:focus {
   outline: none;
 }
 
+/* Estilos aplicados cuando la ventana tiene un ancho mínimo de 1700px */
 @media (min-width: 1700px) {
   main .container {
     max-width: 100%;
@@ -87,19 +98,23 @@ select:focus {
   }
 }
 
+/* Estilos para párrafos con clase "success" */
 p.success {
   color: green;
 }
 
+/* Estilos para párrafos con clase "alert" */
 p.alert {
   color: yellow;
 }
 
+/* Estilos para párrafos con clase "danger" */
 p.danger {
   color: red;
 }
 
 /************ Navbar Css ************/
+/* Estilos para la barra de navegación */
 nav.navbar {
   padding: 10px 0;
   position: fixed;
@@ -137,6 +152,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 }
 
 /************ Banner Css ************/
+/* Estilos para el banner */
 .banner {
   margin-top: 0;
   padding: 170px 0 100px 0;
@@ -147,6 +163,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   border-bottom: 3px solid #c2dc00;
 }
 
+/* Estilos para el eslogan en el banner */
 .banner .tagline {
   font-weight: 800;
   letter-spacing: 3px;
@@ -183,6 +200,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   width: 200px;
 }
 
+/* Animación para la imagen en el banner */
 @keyframes updown {
   0% {
     transform: translateY(-20px);
@@ -202,7 +220,9 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 }
 
 /************ Main Css ************/
-.main {
+
+/* Estilos para el contenedor principal */
+.info {
   padding: 50px 0 100px 0;
   position: relative;
   text-align: center;
@@ -218,6 +238,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   margin: 0 auto;
 }
 
+/* Estilos para el título */
 .h1-text-1 {
   color: #fff;
   font-size: 30px;
@@ -225,14 +246,16 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   margin-bottom: 20px;
 }
 
-.main-firts-text {
+/* Estilos para el primer texto informativo */
+.info-firts-text {
   color: #e6e6e6;
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 15px;
 }
 
-.main-second-text {
+/* Estilos para el segundo texto informativo */
+.info-second-text {
   color: #c2dc00;
   font-size: 18px;
   line-height: 1.5;
@@ -240,6 +263,8 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 }
 
 /************ Rewards Css ************/
+
+/* Estilos para el contenedor de recompensas */
 .rewards {
   padding: 0 0 50px 0;
   position: relative;
@@ -250,6 +275,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   border-bottom: 1px solid #c2dc00;
 }
 
+/* Estilos para el cuadro de recompensas */
 .rewards-bx {
   background: #1d1d1d;
   border-radius: 40px;
@@ -287,6 +313,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 
 /************ Form Css ************/
 
+/* Estilos para el formulario */
 .form {
   padding: 60px 0 50px 0;
   background-image: url('./assets/img/main.png');
@@ -396,6 +423,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   margin-top: 15px;
 }
 
+/* Estilos para el carousel */
 .carousel-container {
   display: flex;
   justify-content: center;
@@ -410,6 +438,8 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 }
 
 /************ Footer Css ************/
+
+/* Estilos para el pie de pagina */
 .footer {
   padding: 0 0 20px 0;
   padding-top: 1%;
@@ -442,6 +472,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   transition: 0.1s;
 }
 
+/* Estilos para el boton scroll to top*/
 .scroll-to-top-icon {
   color: #000;
   font-size: 24px;
@@ -455,6 +486,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 
 /************ Loader Css ************/
 
+/* Estilos para el loader */
 .lds-ripple {
   display: inline-block;
   position: relative;
@@ -507,6 +539,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   }
 }
 
+/* Estilos para el fondo del loader */
 .loader {
   background-color: black;
   width: 100%;

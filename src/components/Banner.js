@@ -3,22 +3,32 @@ import { Col, Container, Row } from "react-bootstrap";
 import logo2 from "../assets/img/logo2.png";
 
 export const Banner = () => {
+    // Estado para controlar el número de iteraciones del ciclo
     const [loopNum, setLoopNum] = useState(0);
+    // Estado para controlar si se está eliminando texto
     const [isDeleting, setIsDeleting] = useState(false);
+    // Estado para almacenar el texto actual
     const [text, setText] = useState('');
+    // Estado para controlar el tiempo de espera entre caracteres
     const [delta, setDelta] = useState(300 - Math.random() * 100);
+    // Estado para controlar el índice actual del arreglo "toRotate"
     const [index, setIndex] = useState(1);
+    // Arreglo de frases para mostrar
     const toRotate = ["Programadores", "Diseñadores", "Comunicadores", "Analistas De Datos", "Y Más Perfiles."];
+    // Período de tiempo entre cambios de frase
     const period = 2000;
 
     useEffect(() => {
+        // Configuración de un temporizador para llamar a la función tick()
         let ticker = setInterval(() => {
             tick();
         }, delta);
 
+        // Limpieza del temporizador al desmontar el componente
         return () => { clearInterval(ticker) };
     }, [text])
 
+    // Función para manejar el cambio de texto
     const tick = () => {
         let i = loopNum % toRotate.length;
         let fullText = toRotate[i];
