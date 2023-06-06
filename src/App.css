@@ -91,6 +91,10 @@ p.success {
   color: green;
 }
 
+p.alert {
+  color: yellow;
+}
+
 p.danger {
   color: red;
 }
