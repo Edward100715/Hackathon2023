@@ -2,6 +2,7 @@
   "name": "taxislibres",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://edward100715.github.io/Hackathon2023",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -9,6 +10,7 @@
     "bootstrap": "^5.3.0",
     "firebase": "^9.22.1",
     "firestore": "^1.1.6",
+    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.4",
     "react-dom": "^18.2.0",
@@ -21,6 +23,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
