@@ -120,7 +120,7 @@ export const Formulario = () => {
             <div className="form-div">
                 <h1 className="h1-text-2"> Patrocinadores Oficiales</h1>
                 <div className="carousel-container">
-                    <Carousel className="carousel" interval={3000} pause={false} fade>
+                    <Carousel className="carousel" interval={3000} pause={false}>
                         <Carousel.Item>
                             <img className="d-block w-100" src={patrocinador1} alt="Patrocinador 1" />
                         </Carousel.Item>
