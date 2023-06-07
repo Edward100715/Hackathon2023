@@ -61,7 +61,7 @@ export const Formulario = () => {
                         <h2>Formulario de inscripción</h2>
                         <form onSubmit={handleSubmit}>
                             <Row>
-                                <Col xs={12} sm={8} className="px-1">
+                                <Col xs={12} sm={12} className="px-1">
                                     <input
                                         type="number"
                                         placeholder="Nro de identificacion"
@@ -69,12 +69,20 @@ export const Formulario = () => {
                                         onChange={(e) => setNroid(e.target.value)}
                                     />
                                 </Col>
-                                <Col xs={12} sm={7} className="px-1">
+                                <Col xs={12} sm={12} className="px-1">
                                     <input
                                         type="text"
                                         placeholder="Nombre Completo"
                                         value={nombre}
                                         onChange={(e) => setNombre(e.target.value)}
+                                    />
+                                </Col>
+                                <Col xs={12} sm={12} className="px-1">
+                                    <input
+                                        type="tel"
+                                        placeholder="Telefono celular"
+                                        value={telefono}
+                                        onChange={(e) => setTelefono(e.target.value)}
                                     />
                                 </Col>
                                 <Col xs={12} sm={4} className="px-1">
@@ -91,14 +99,6 @@ export const Formulario = () => {
                                         placeholder="Correo electrónico"
                                         value={correo}
                                         onChange={(e) => setCorreo(e.target.value)}
-                                    />
-                                </Col>
-                                <Col xs={12} sm={6} className="px-1">
-                                    <input
-                                        type="tel"
-                                        placeholder="Telefono celular"
-                                        value={telefono}
-                                        onChange={(e) => setTelefono(e.target.value)}
                                     />
                                 </Col>
                                 <Col xs={12} className="px-1">
